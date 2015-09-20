@@ -1,0 +1,139 @@
+-debug
+-target:library
+-nowarn:0169
+-out:Temp/Assembly-CSharp.dll
+-r:"C:\Program Files\Unity\Editor\Data\PlaybackEngines\androidplayer/Variations/mono/Managed/UnityEngine.dll"
+-r:"C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/GUISystem/Standalone/UnityEngine.UI.dll"
+-r:"C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/Networking/Standalone/UnityEngine.Networking.dll"
+-r:Assets/Vuforia/Scripts/Internal/Qualcomm.Vuforia.UnityExtensions.dll
+-define:UNITY_5_2_0
+-define:UNITY_5_2
+-define:UNITY_5
+-define:ENABLE_NEW_BUGREPORTER
+-define:ENABLE_2D_PHYSICS
+-define:ENABLE_4_6_FEATURES
+-define:ENABLE_AUDIO
+-define:ENABLE_CACHING
+-define:ENABLE_CLOTH
+-define:ENABLE_FRAME_DEBUGGER
+-define:ENABLE_GENERICS
+-define:ENABLE_HOME_SCREEN
+-define:ENABLE_IMAGEEFFECTS
+-define:ENABLE_LIGHT_PROBES_LEGACY
+-define:ENABLE_MICROPHONE
+-define:ENABLE_MULTIPLE_DISPLAYS
+-define:ENABLE_PHYSICS
+-define:ENABLE_PLUGIN_INSPECTOR
+-define:ENABLE_SHADOWS
+-define:ENABLE_SINGLE_INSTANCE_BUILD_SETTING
+-define:ENABLE_SPRITES
+-define:ENABLE_TERRAIN
+-define:ENABLE_RAKNET
+-define:ENABLE_UNET
+-define:ENABLE_UNITYEVENTS
+-define:ENABLE_VR
+-define:ENABLE_WEBCAM
+-define:ENABLE_WWW
+-define:ENABLE_CLOUD_SERVICES
+-define:ENABLE_CLOUD_SERVICES_ADS
+-define:ENABLE_CLOUD_HUB
+-define:ENABLE_CLOUD_PROJECT_ID
+-define:ENABLE_CLOUD_SERVICES_ANALYTICS
+-define:ENABLE_CLOUD_SERVICES_UNET
+-define:ENABLE_CLOUD_SERVICES_BUILD
+-define:ENABLE_CLOUD_LICENSE
+-define:ENABLE_EDITOR_METRICS
+-define:ENABLE_REFLECTION_BUFFERS
+-define:INCLUDE_DYNAMIC_GI
+-define:INCLUDE_GI
+-define:INCLUDE_IL2CPP
+-define:INCLUDE_DIRECTX12
+-define:PLATFORM_SUPPORTS_MONO
+-define:RENDER_SOFTWARE_CURSOR
+-define:ENABLE_LOCALIZATION
+-define:ENABLE_ANDROID_ATLAS_ETC1_COMPRESSION
+-define:UNITY_ANDROID
+-define:UNITY_ANDROID_API
+-define:ENABLE_SUBSTANCE
+-define:ENABLE_TEXTUREID_MAP
+-define:ENABLE_EGL
+-define:ENABLE_NETWORK
+-define:ENABLE_RUNTIME_GI
+-define:ENABLE_CRUNCH_TEXTURE_COMPRESSION
+-define:ENABLE_UNITYADS_RUNTIME
+-define:UNITY_UNITYADS_API
+-define:ENABLE_MONO
+-define:VUFORIA_ANDROID_SETTINGS
+"Assets/Android Microcontroller Bluetooth/Demos/Basic Demo/BasicDemo.cs"
+"Assets/Android Microcontroller Bluetooth/Demos/Bluetooth Joystick Tutorial/ReadJoystick.cs"
+"Assets/Android Microcontroller Bluetooth/Demos/Bluetooth Terminal (Bytes level)/BytesTerminal.cs"
+"Assets/Android Microcontroller Bluetooth/Demos/Bluetooth Terminal/Terminal.cs"
+"Assets/Android Microcontroller Bluetooth/Plugins/BtController/BtConnection.cs"
+"Assets/Android Microcontroller Bluetooth/Plugins/BtController/BtConnector.cs"
+Assets/CNControls/Examples/Scenes/2D/Scripts/Camera2DFollow.cs
+Assets/CNControls/Examples/Scenes/2D/Scripts/Platformer2DUserControl.cs
+Assets/CNControls/Examples/Scenes/2D/Scripts/PlatformerCharacter2D.cs
+Assets/CNControls/Examples/Scenes/2D/Scripts/Restarter.cs
+"Assets/CNControls/Examples/Scenes/Custom Joystick/FourWayController.cs"
+"Assets/CNControls/Examples/Scenes/Third Person/AbstractTargetFollower.cs"
+"Assets/CNControls/Examples/Scenes/Third Person/AutoCam.cs"
+"Assets/CNControls/Examples/Scenes/Third Person/PivotBasedCameraRig.cs"
+"Assets/CNControls/Examples/Scenes/Third Person/ThidPersonExampleController.cs"
+"Assets/CNControls/Examples/Scenes/Touchpad Camera/RotateCamera.cs"
+"Assets/CNControls/Examples/Scenes/Touchpad Camera/RotationConstraint.cs"
+Assets/CNControls/Scripts/CnInputSystem/CnInputManager.cs
+Assets/CNControls/Scripts/CnInputSystem/VirtualAxis.cs
+Assets/CNControls/Scripts/CnInputSystem/VirtualButton.cs
+Assets/CNControls/Scripts/Controllers/Dpad.cs
+Assets/CNControls/Scripts/Controllers/DpadAxis.cs
+Assets/CNControls/Scripts/Controllers/InputHelpers/BaseInputHelper.cs
+Assets/CNControls/Scripts/Controllers/InputHelpers/ButtonInputHelper.cs
+Assets/CNControls/Scripts/Controllers/InputHelpers/DpadInputHelper.cs
+Assets/CNControls/Scripts/Controllers/InputHelpers/JoystickInputHelper.cs
+Assets/CNControls/Scripts/Controllers/InputHelpers/TouchpadInputHelper.cs
+Assets/CNControls/Scripts/Controllers/SensitiveJoystick.cs
+Assets/CNControls/Scripts/Controllers/SimpleButton.cs
+Assets/CNControls/Scripts/Controllers/SimpleJoystick.cs
+Assets/CNControls/Scripts/Controllers/Touchpad.cs
+Assets/Vuforia/Scripts/BackgroundPlaneBehaviour.cs
+Assets/Vuforia/Scripts/CloudRecoBehaviour.cs
+Assets/Vuforia/Scripts/CylinderTargetBehaviour.cs
+Assets/Vuforia/Scripts/DatabaseLoadBehaviour.cs
+Assets/Vuforia/Scripts/DefaultInitializationErrorHandler.cs
+Assets/Vuforia/Scripts/DefaultSmartTerrainEventHandler.cs
+Assets/Vuforia/Scripts/DefaultTrackableEventHandler.cs
+Assets/Vuforia/Scripts/GLErrorHandler.cs
+Assets/Vuforia/Scripts/HideExcessAreaBehaviour.cs
+Assets/Vuforia/Scripts/ImageTargetBehaviour.cs
+Assets/Vuforia/Scripts/Internal/AndroidUnityPlayer.cs
+Assets/Vuforia/Scripts/Internal/ComponentFactoryStarterBehaviour.cs
+Assets/Vuforia/Scripts/Internal/IOSUnityPlayer.cs
+Assets/Vuforia/Scripts/Internal/VuforiaBehaviourComponentFactory.cs
+Assets/Vuforia/Scripts/KeepAliveBehaviour.cs
+Assets/Vuforia/Scripts/MarkerBehaviour.cs
+Assets/Vuforia/Scripts/MaskOutBehaviour.cs
+Assets/Vuforia/Scripts/MultiTargetBehaviour.cs
+Assets/Vuforia/Scripts/ObjectTargetBehaviour.cs
+Assets/Vuforia/Scripts/PropBehaviour.cs
+Assets/Vuforia/Scripts/ReconstructionBehaviour.cs
+Assets/Vuforia/Scripts/ReconstructionFromTargetBehaviour.cs
+Assets/Vuforia/Scripts/SmartTerrainTrackerBehaviour.cs
+Assets/Vuforia/Scripts/SurfaceBehaviour.cs
+Assets/Vuforia/Scripts/TextRecoBehaviour.cs
+Assets/Vuforia/Scripts/TurnOffBehaviour.cs
+Assets/Vuforia/Scripts/TurnOffWordBehaviour.cs
+Assets/Vuforia/Scripts/UserDefinedTargetBuildingBehaviour.cs
+Assets/Vuforia/Scripts/VideoBackgroundBehaviour.cs
+Assets/Vuforia/Scripts/VideoTextureRenderer.cs
+Assets/Vuforia/Scripts/VirtualButtonBehaviour.cs
+Assets/Vuforia/Scripts/VuforiaBehaviour.cs
+Assets/Vuforia/Scripts/WebCamBehaviour.cs
+Assets/Vuforia/Scripts/WireframeBehaviour.cs
+Assets/Vuforia/Scripts/WireframeTrackableEventHandler.cs
+Assets/Vuforia/Scripts/WordBehaviour.cs
+Assets/scripts/RobotControl.cs
+Assets/scripts/bulletCollision.cs
+Assets/scripts/shoot.cs
+Assets/scripts/zombieMovement.cs
+-r:"C:\Program Files\Unity\Editor\Data\Mono\lib\mono\unity\System.Runtime.Serialization.dll"
+-r:"C:\Program Files\Unity\Editor\Data\Mono\lib\mono\unity\System.Xml.Linq.dll"

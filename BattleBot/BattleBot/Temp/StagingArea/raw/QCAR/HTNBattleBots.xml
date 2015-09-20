@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<QCARConfig xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="qcar_config.xsd">
+  <Tracking>
+    <ImageTarget name="newton4" size="10.000000 10.050000" />
+    <ImageTarget name="publication_02" size="100.000000 75.862068" />
+    <ImageTarget name="ghandi" size="10.000000 9.991198" />
+    <ImageTarget name="charles_darwin" size="10.000000 10.000000" />
+    <ImageTarget name="Beatles" size="10.000000 10.000000" />
+    <ImageTarget name="albert_einstein" size="10.000000 10.027624" />
+  </Tracking>
+</QCARConfig>

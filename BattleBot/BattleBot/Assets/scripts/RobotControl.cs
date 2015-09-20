@@ -5,8 +5,9 @@ using CnControls;
 public class RobotControl : MonoBehaviour {
 
     string bt_module_name = "HC-06";
-
-
+    public static int NoOfKills = 0;
+    public enum Status { GAMEOVER, PLAYING, WON, START };
+    public static Status status;
     // Use this for initialization
     void Start()
     {
@@ -19,44 +20,49 @@ public class RobotControl : MonoBehaviour {
     // Update is called once per frame
     void Update()
     {
-       var movementVector = new Vector3(CnInputManager.GetAxis("Horizontal"), 0f, CnInputManager.GetAxis("Vertical"));
-        if (movementVector.sqrMagnitude < 0.00001f) return;
 
 
-        double joystick_h = CnInputManager.GetAxis("Horizontal");
 
-        double joystick_v = CnInputManager.GetAxis("Vertical");
-
-        bool move_h = false;
-        if (System.Math.Abs(joystick_h) > System.Math.Abs(joystick_v))
+        if (status == Status.PLAYING || status == Status.START)
         {
-            move_h = true;
-        }
+            bool move_h = false;
+            var movementVector = new Vector3(CnInputManager.GetAxis("Horizontal"), 0f, CnInputManager.GetAxis("Vertical"));
+            if (movementVector.sqrMagnitude < 0.00001f) return;
 
-        if (move_h)
-        {
-            if (joystick_h < 0)
+
+            double joystick_h = CnInputManager.GetAxis("Horizontal");
+
+            double joystick_v = CnInputManager.GetAxis("Vertical");
+
+            if (System.Math.Abs(joystick_h) > System.Math.Abs(joystick_v))
             {
-                move(3);
+                move_h = true;
+            }
+
+            if (move_h)
+            {
+                if (joystick_h < 0)
+                {
+                    move(3);
+                }
+                else
+                {
+                    move(4);
+                }
             }
             else
             {
-                move(4);
-            }
-        }
-        else
-        {
-            if (joystick_v > 0)
-            {
-                move(1);
-            }
-            else
-            {
-                move(2);
+                if (joystick_v > 0)
+                {
+                    move(1);
+                }
+                else
+                {
+                    move(2);
+                }
             }
         }
 
-       
 
 
     }
@@ -77,7 +83,26 @@ public class RobotControl : MonoBehaviour {
                 {
                     BtConnector.moduleName(bt_module_name);
                     BtConnector.connect();
+                    status = Status.PLAYING;
                 }
+            }
+        }
+        else if (status == Status.GAMEOVER)
+        {
+            if (GUI.Button(new Rect(Screen.width*0.4f, Screen.height * 0.1f, Screen.width , Screen.height * 0.4f), "YOU LOST! RESTART?"))
+            {
+                status = Status.START;
+                NoOfKills = 0;
+                Application.LoadLevel(0);
+            }
+        }
+        else if (status == Status.WON)
+        {
+            if (GUI.Button(new Rect(Screen.width*0.4f, Screen.height * 0.1f, Screen.width , Screen.height * 0.4f), "YOU WON! RESTART?"))
+            {
+                NoOfKills = 0;
+                status = Status.START;
+                Application.LoadLevel(0);
             }
         }
 
